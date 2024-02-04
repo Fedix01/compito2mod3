@@ -15,6 +15,7 @@ let btnSearch = document.getElementById("button-search");
 
 let modalBody = document.querySelectorAll(".modal-body");
 
+let modalTitle = document.querySelectorAll(".modal-title");
 
 
 function loadData(string) {
@@ -50,6 +51,11 @@ function createHtml(result) {
     myAlbum.className = "m-5";
     subContainerEm.appendChild(myAlbum);
     let modalBtn = document.createElement("button");
+    modalBtn.style.display = "block";
+    modalBtn.style.margin = "auto";
+    modalBtn.style.marginTop = "20px";
+    modalTitle[0].innerText = album;
+    modalTitle[0].style.color = "black";
     modalBtn.innerText = "Brani";
     modalBtn.className = "btn btn-outline-light";
     modalBtn.setAttribute("data-toggle", "modal");
@@ -82,6 +88,11 @@ function createHtml2(result) {
     myAlbum.className = "m-5";
     subContainerMet.appendChild(myAlbum);
     let modalBtn = document.createElement("button");
+    modalBtn.style.display = "block";
+    modalBtn.style.margin = "auto";
+    modalBtn.style.marginTop = "20px";
+    modalTitle[1].innerText = album;
+    modalTitle[1].style.color = "black";
     modalBtn.innerText = "Brani";
     modalBtn.className = "btn btn-outline-light";
     modalBtn.setAttribute("data-toggle", "modal");
@@ -115,6 +126,11 @@ function createHtml3(result) {
     myAlbum.className = "m-5";
     subContainerQueen.appendChild(myAlbum);
     let modalBtn = document.createElement("button");
+    modalBtn.style.display = "block";
+    modalBtn.style.margin = "auto";
+    modalBtn.style.marginTop = "20px";
+    modalTitle[2].innerText = album;
+    modalTitle[2].style.color = "black";
     modalBtn.innerText = "Brani";
     modalBtn.className = "btn btn-outline-light";
     modalBtn.setAttribute("data-toggle", "modal");
